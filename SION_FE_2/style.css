@@ -74,6 +74,20 @@
     font-size: 12px;
     font-weight: 500;
   }
+
+  .navLink {
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+  }
+  .navLink > a{
+    background-color: #946991;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+  }
   
   /* ✅ main ✅ */
   main {
@@ -86,9 +100,16 @@
     align-items: center;
     gap: 50px;
     padding: 30px 0; /*마진 대신 안쪽 여백을 줌 */
-    background-color: #F7D785;
+    background-color: #f3d686;
   }
   
+  #choonsikImg{
+    width: 150px;
+    height: auto;
+    position: relative;
+    right: 50px;
+  }
+
   section {
     /* 너비는 600px */
     /* 플렉스 속성(y축 정렬) */
@@ -298,6 +319,11 @@
     /* 폰트크기는 10px */
     /* 폰트 색상도 지정해주세요 */
     font-size: 10px;
-    color: #000000;
+    color: #d4c3aa;
+  }
+
+  footer ul  >li> a {
+    color: #d2b78d;
+    font-weight: 700;
   }
   
