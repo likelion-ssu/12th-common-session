@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
   <link rel ="icon" href="likelion.ico" />
+  <link rel="stylesheet" href="./style.css" />
   <link
     rel="stylesheet"
     as="style"
@@ -14,7 +15,7 @@
 </head>
   <body>
     <header>
-      <h1> 정연재의 TMI </h1>
+      <h1 id="header-title">연재의 TMI</h1>
       <nav>
         <ul>
           <li><a href="#basicInfo">#기본정보</a></li>
@@ -31,8 +32,7 @@
       <section id="basicInfo">
         <h2 class="section-title"> 기본 자기소개 </h2>
         <article>
-          <img src="./정연재.jpg" alt="정연재의 사진" 
-          width='130px' height="170px"/>
+          <img id="basicInfo-profileImg" src="./yeonjae.jpg" alt="연재의 프로필 사진"/>
           <ul>
             <li>
               <span class="basicInfo-question">이름</span>
@@ -69,6 +69,7 @@
           <ol>
             <li>부먹 vs <span class="balanceGame-answer">찍먹</span></li>
             <li><span class="balanceGame-answer">팥붕</span> vs 슈붕</li>
+            <li><span class="balanceGame-answer">반민초</span> vs 민초</li>
             <li>100만원 받고 파트 바꾸기 vs <span class="balanceGame-answer">자금 내 파트 선택하기</span></li>
             <li>멋사의 기둥 유승한 vs <span class="balanceGame-answer">차은우</span></li>
           </ol>
@@ -110,7 +111,7 @@
       <!--Start letter section-->
       <section id="letter">
         <h2 class="section-title"> 1년 동안 함께 할 12기에게 한 마디 </h2>
-        <pre>1년동안 잘 부탁드립니다! 많이 친해져요 ㅎㅎ..</pre>
+        <pre id="letter-pre">1년 동안 잘 부탁드려요</pre>
       </section>
       <!--End letter section-->
     </main>
