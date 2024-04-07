@@ -1,0 +1,299 @@
+* {
+        font-family: 'Pretendard Variable', Pretendard, -apple-system,
+          BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+          'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+          'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  }
+    /* 수연쓰의 선물 🎁 */
+    /* 박스 사이즈를 padding, margin포함해서 계산하겠다 + 폰트 pretendard설정 */
+    box-sizing: border-box;
+  
+  body {
+    /* 수연쓰의 선물 🎁 */
+    /* 기본여백 없애겠다 */
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  ul {
+    /* 수연쓰의 선물 🎁 */
+    /* 앞으로 있을 모든 ul 리스트 앞에 점을 없애겠다 */
+    list-style-type: none;
+  }
+  
+  ul,
+  ol {
+    /* 수연쓰의 선물 🎁 */
+    /* 앞으로 있을 모든 리스트 앞에 점과 여백 없애겠다 */
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /* ---기본세팅--- */
+  
+  /* ✅ header ✅ */
+  
+  header {
+    /* 수연쓰의 선물 🎁 */
+    /* 헤더가 페이지 상단에 있고, 스크롤을 내려도 상단에 위치하게 해주세요 */
+    /* 내부 가로 여백을 20px로 해주세요 */
+    /* 헤더의 높이는 40px로 해주세요 */
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 40px;
+    /* 바탕 컬러는 본인이 원하는 색상으로 수정해주세요 */
+    background-color: #e4d0b8;
+  }
+  
+  header h1 {
+    /* 폰트크기는 16px, 굵기 800 으로 해주세요 */
+    font-size: 16px;
+    font-weight: 800;
+    color:#6e604f;
+  }
+  
+  header > nav ul {
+    /* 헤더 영역 속 nav바 안의 ul 속 콘텐츠들 => 플렉스 속성 */
+    /* x축 오른쪽부터 정렬 */
+    /* y축 가운데 정렬 */
+    /* 사이 간격은 10px로 해주세요~ */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  header ul > li {
+    /* 수연쓰의 선물 🎁 */
+    /* 폰트크기는 12px, 굵기 500 으로 해주세요! */
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  /* ✅ main ✅ */
+  main {
+    /* main의 자식들을 가운데 정렬시키겠다 */
+    /* 메인 영역 속 콘텐츠들 => 플렉스 속성(y축 정렬) */
+    /* 사이 간격은 50px로 해주세요~ */
+    /* 위아래만 마진을 30px씩 주세요 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 30px 0;
+
+  }
+  
+  section {
+    /* 너비는 600px */
+    /* 플렉스 속성(y축 정렬) */
+    /* 위쪽 마진만 20px 주세요 */
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    /* 안쪽 여백은 위아래 왼쪽 오른쪽 모두 10px씩 */
+    /* 모서리 둥글게 10px씩! */
+    /* 배경색과 폰트색은 원하는 색상으로 지정해주세요 */
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #9f8c74;
+    color: white;
+  }
+  
+  /* 💖 basicInfo 💖 기본정보 */
+  
+  #basicInfo article {
+    /* 가운데정렬 */
+    /* 프로필이미지와 정보들 사이의 간격 30px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  #basicInfo-profileImg {
+    /* 너비는 150px */
+    /* 높이는 150px */
+    /* 모서리 둥글게 20px씩! */
+    object-fit: cover; /* 수연쓰의 선물 🎁, 이미지를 박스안에 쏘옥 넣어줘요~ */
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+  }
+  
+  #basicInfo ul {
+    /* y축 정렬 */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .basicInfo-question {
+    /* 수연쓰의 선물 🎁 */
+    /* 폰트크기는 13px, 굵기 500 으로 해주세요! */
+    font-size: 13px;
+    font-weight: 500;
+    /* 요소 뒤에 ':' 붙여주기 */
+  &::after {
+    content: ':'
+  }
+  }
+  
+  .basicInfo-answer {
+    /* 폰트크기는 12px, 굵기 600 으로 해주세요! */
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  /* 💖 balanceGame 💖 밸런스_게임 */
+  
+  #balanceGame {
+    /* 기본 축 y */
+    /* x축 가운데 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #balanceGame ol {
+    /* y축 정렬 */
+    /* 사이 여백은 30px로 줘요! */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  #balanceGame ol > li {
+    /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .balanceGame-answer {
+    /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+    /* 배경색과 폰트색은 원하는 색상으로 지정해주세요 */
+    /* 모서리 둥글게 20px씩 */
+    /* 박스 안쪽 여백은 4px씩 */
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #e4d0b8;
+    color: #5a4e41;
+    border-radius: 20px;
+    padding: 4px;
+  }
+  
+  /* 💖 favoriteFood 💖 favoriteFood */
+  
+  #favoriteFood {
+    /* 기본 축 y */
+    /* x축 가운데 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #favoriteFood ol {
+    /* y축 가운데 정렬 */
+    /* 사이 여백은 30px로 줘요! */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  #favoriteFood ol > li {
+    /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* 💖 wantToDo 💖 wantToDo */
+  
+  #wantToDo {
+    /* 기본 축 y */
+    /* x축 가운데 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #wantToDo ul {
+    /* y축 정렬 */
+    /* 사이 여백은 30px로 줘요! */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  
+    & > li {
+      /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  
+  /* 💖 tmi 💖 tmi */
+  
+  #tmi {
+    /* 기본 축 y */
+    /* x축 가운데 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #tmi ol {
+    /* y축 정렬 */
+    /* 사이 여백은 30px로 줘요! */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  #tmi ol > li {
+    /* 폰트크기는 14px, 굵기 600 으로 해주세요! */
+      font-size: 14px;
+      font-weight: 600;
+  }
+  
+  /* 💖 letter 💖 12기에게 한마디 */
+  #letter-pre {
+    /* 너비는 100%, 높이는 자동 */
+    /* 모서리 둥글게 10px씩 */
+    width : 100%;
+    height : auto;
+    border-radius : 10px;
+    /* 가장자리 외곽선은 1px solid, 색상은 본인 마음대로! */
+    /* 박스 안쪽 여백은 10px씩 */
+    border : 1px solid #5a4e41;
+    padding: 10px;
+
+
+  }
+  
+  /* ✅ footer ✅ */
+  footer {
+    /* 너비는 100% */
+    /* 배경색 본인 마음대로! */
+    /* 박스 안쪽 여백은 20px씩 */
+    width: 100%;
+    background-color: #d8c2a6;
+    padding: 20px;
+  }
+  
+  footer ul > li {
+    /* 폰트크기는 10px */
+    /* 폰트 색상도 지정해주세요 */
+    font-size: 10px;
+    color: #5a4e41;
+  }
+  
