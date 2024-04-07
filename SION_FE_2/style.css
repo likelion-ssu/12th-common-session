@@ -53,7 +53,7 @@
     /* 폰트크기는 16px, 굵기 800 으로 해주세요 */
     font-size: 16px;
     font-weight: 800;
-    color:white;
+    color: #f1e5e0;
   }
   
   header > nav ul {
@@ -75,13 +75,9 @@
     font-weight: 500;
   }
 
-  .navLink {
-    font-size: 10px;
-    font-weight: 500;
-    color: white;
-  }
+
   .navLink > a{
-    background-color: #946991;
+    background-color: #ed9a77;
     border-radius: 5px;
     padding: 3px;
     font-size: 10px;
@@ -104,10 +100,12 @@
   }
   
   #choonsikImg{
-    width: 150px;
-    height: auto;
     position: relative;
-    right: 50px;
+    left: 200px;
+    top: -400px;
+    width: 100px;
+    height: auto;
+    
   }
 
   section {
@@ -131,7 +129,7 @@
     padding: 10px;
     border-radius: 10px;
     background-color: #ed9a77;
-    color: white;
+    color: #f1ebe8;
     text-align: center;
   }
   
@@ -289,6 +287,11 @@
     font-weight: 600;
   }
   
+  #tmiChoonsik{
+    color: #997C4F;
+    font-weight: 400;
+  }
+
   /* 💖 letter 💖 12기에게 한마디 */
 
   #letter-pre {
