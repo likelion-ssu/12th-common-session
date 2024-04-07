@@ -81,8 +81,12 @@
     border-radius: 5px;
     padding: 3px;
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
+  }
+
+  .navLink a:hover{
+    background-color: #946991;
   }
   
   /* ✅ main ✅ */
