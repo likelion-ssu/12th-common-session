@@ -270,22 +270,23 @@ section {
 }
 
 /* 💖 letter 💖 12기에게 한마디 */
+#letter {
+  flex-direction: column;
+  align-items: center;
+}
 #letter-pre {
   /* 너비는 100%, 높이는 자동 */
   /* 모서리 둥글게 10px씩 */
   text-align: center;
-  width: 100%;
+
   height: auto;
-  text-align: center;
-  padding: 20px;
-  margin: 10px;
+  padding: 40px;
   /* 가장자리 외곽선은 1px solid, 색상은 본인 마음대로! */
   /* 박스 안쪽 여백은 10px씩 */
   border-radius: 10px;
   background-color: whitesmoke;
   border: 5px dotted magenta;
   color: hotpink;
-  font-stretch: 50%;
 }
 
 /* ✅ footer ✅ */
