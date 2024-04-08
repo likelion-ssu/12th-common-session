@@ -1,0 +1,235 @@
+* {
+  /* 박스 사이즈를 padding, margin포함해서 계산하겠다 + 폰트 pretendard설정 */
+  box-sizing: border-box;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+body {
+  /* 기본여백 없애겠다 */
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  /* 앞으로 있을 모든 ul 리스트 앞에 점을 없애겠다 */
+  list-style-type: none;
+}
+
+ul,
+ol {
+  /* 앞으로 있을 모든 리스트 앞에 점과 여백 없애겠다 */
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ---기본세팅--- */
+
+/* ✅ header ✅ */
+
+header {
+  /* 주석 예시!! */
+  /* 헤더가 페이지 상단에 있고, 스크롤을 내려도 상단에 위치하게 해주세요 */
+  /* 내부 가로 여백을 20px로 해주세요 */
+  /* 헤더의 높이는 40px로 해주세요 */
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 40px;
+  background-color: #d0dcfb;
+}
+
+header h1 {
+  font-size: 16px;
+  font-weight: 800;
+  color: rgb(104, 123, 244);
+}
+
+header > nav ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+}
+
+header ul > li {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ✅ main ✅ */
+main {
+  /* main의 자식들을 가운데 정렬시키겠다 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin: 30px 0;
+}
+
+section {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  background-color: #9db9fd;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* 💖 basicInfo 💖 기본정보 */
+
+#basicInfo article {
+  /* 가운데정렬 */
+  /* 프로필이미지와 정보들 사이의 간격 30px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#basicInfo-profileImg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#basicInfo ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.basicInfo-question {
+  font-size: 13px;
+  font-weight: 500;
+
+  /* 요소 뒤에 ':' 붙여주기 */
+  &::after {
+    content: ' : ';
+  }
+}
+
+.basicInfo-answer {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 💖 balanceGame 💖 밸런스_게임 */
+
+#balanceGame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#balanceGame ol {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#balanceGame ol > li {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.balanceGame-answer {
+  font-size: 14px;
+  font-weight: 600;
+  color: #608dff;
+  background-color: #d0dcfb;
+  border-radius: 20px;
+  padding: 4px;
+}
+
+/* 💖 favoriteFood 💖 favoriteFood */
+
+#favoriteFood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#favoriteFood ol {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#favoriteFood ol > li {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* 💖 wantToDo 💖 wantToDo */
+
+#wantToDo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#wantToDo ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  & > li {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+/* 💖 tmi 💖 tmi */
+
+#tmi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tmi ol {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#tmi ol > li {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* 💖 letter 💖 12기에게 한마디 */
+#letter-pre {
+  width: 100%;
+  height: auto;
+  padding: 10px 10px;
+  border: 1px solid #9db9fd;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* ✅ footer ✅ */
+footer {
+  width: 100%;
+  background-color: #d0dcfb;
+  padding: 20px;
+}
+
+footer ul > li {
+  font-size: 10px;
+  color: #515151;
+}
