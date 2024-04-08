@@ -76,7 +76,7 @@ header ul > li {
 /* ✅ main ✅ */
 main {
     /* main의 자식들을 가운데 정렬시키겠다 */
-    display : flex;
+    display : flex; 
     /* 메인 영역 속 콘텐츠들 => 플렉스 속성(y축 정렬) */
     flex-direction : column;
     align-items : center;
