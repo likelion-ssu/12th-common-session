@@ -9,8 +9,19 @@
 }
 
 body {
+  height: 100vh;
   display: flex;
   justify-content: center;
+  background: linear-gradient(
+      12deg,
+      rgba(30, 14, 92, 0.9) 8.77%,
+      #151f4f 25.76%,
+      #050b11 48.76%,
+      #051221 65.77%,
+      #0a1b2f 82.65%,
+      rgba(35, 22, 88, 0.79) 102.19%
+    ),
+    #fff;
 }
 
 ul,
@@ -24,7 +35,20 @@ li {
 header {
   position: fixed;
   top: 0;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  & > h1 {
+    font-size: 20px;
+    color: white;
+  }
+  & > p {
+    font-size: 10px;
+    color: white;
+  }
 }
 main {
   margin-top: 50px;
@@ -75,7 +99,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
+  color: white;
   font-size: 16px;
   font-weight: 800;
   visibility: hidden;
