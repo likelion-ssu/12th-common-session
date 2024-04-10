@@ -42,6 +42,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  cursor: pointer;
 }
 
 /*  */
@@ -56,4 +58,32 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.wrapper img {
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+.wrapper:hover img {
+  opacity: 0.5;
+}
+
+.wrapper::after {
+  content: attr(data-alt);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 16px;
+  font-weight: 800;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.wrapper:hover::after {
+  visibility: visible;
+  opacity: 1;
 }
